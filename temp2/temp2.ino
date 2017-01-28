@@ -1,12 +1,13 @@
 #include "ESP8266WiFi.h"
+#include "secretData.h"
 
 
 
 const char WEBSITE[] = "api.pushingbox.com"; //pushingbox API server
-const String devid = "*************"; //device ID from Pushingbox 
+const String devid = PUID; //device ID from Pushingbox 
 
-const char* MY_SSID = "xxxi*******";
-const char* MY_PWD =  "************";
+const char* MY_SSID = SSID;
+const char* MY_PWD =  PASSWORD;
 
 
 void setup()
